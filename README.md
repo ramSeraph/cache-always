@@ -1,3 +1,13 @@
+# Cache-Always-No-Key-Check
+
+A fork of [actions/cache](https://github.com/actions/cache) to always cache when
+a run finishes, even if the cache was hit.
+
+Additionally, this variant will no longer check for the key match, forcing it to
+save even if the cache hit occured on the primary key.
+
+Based on [TerrenceHo/cache-always](https://github.com/TerrenceHo/cache-always), updated to base it off [actions/cache](https://github.com/actions/cache) v3.0.11
+
 # cache
 
 This action allows caching dependencies and build outputs to improve workflow execution time.
